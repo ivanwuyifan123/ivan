@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拖拽</title>
+    <style>
+        #div1{
+            width: 198px;
+            height: 198px;
+            background: #2a8c70;
+            /*color: #fff573;*/
+            /*font-size: 50px;*/
+            /*line-height:250px;*/
+            /*text-align: center;*/
+            position: absolute;
+            background: url("img/hh.JPG");
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <!--<img id="div1" src="img/hh.JPG" alt="">-->
+</div>
+<script>
+    var oDiv = document.getElementById('div1')
+    oDiv.onmousedown = function (e) {
+        var disX = e.clientX - oDiv.offsetLeft;
+        var disY = e.clientY - oDiv.offsetTop;
+        document.onmousemove =function (e) {
+            oDiv.style.left = e.clientX - disX +'px';
+            oDiv.style.top = e.clientY - disY + 'px';
+        }
+        oDiv.onmouseup =function () {
+            document.onmousemove = null;
+        }
+    }
+</script>
+</body>
+</html>

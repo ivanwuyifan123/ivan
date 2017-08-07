@@ -1,0 +1,170 @@
+#banner {
+    height: 179.333px;
+    background: url("../img/doubanapp.png") no-repeat #edf4ed 131px 0;
+    margin-bottom: 25px;
+}
+#banner .wrap{
+    width: 950px;
+    height: 147.333px;
+    margin: 0 auto;
+    background: url("../img/doubanapp5.png") no-repeat 0 -150px;
+    /*overflow: hidden;*/
+    padding-top: 28px;
+    padding-bottom: 4px;
+}
+#banner .app{
+    width: 149px;
+    height: 120px;
+    margin-left: 430px;
+}
+#banner .btn-download{
+    display: inline-block;
+    width: 114px;
+    height: 30px;
+    background: #00b51d;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+    margin-bottom: 7px;
+}
+#banner img{
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-bottom: 2.7px;
+}
+#banner h1{
+    font-size: 25px;
+    color: #111;
+    margin:7px auto;
+}
+#banner p{
+    font-size: 12px;
+    letter-spacing:2px;
+    color: #111111;
+    margin:15px auto;
+}
+#banner .login-form{
+    width: 272px;
+    /*background: #cccccc;*/
+    position: absolute;
+    top: 0;
+    right:0;
+}
+#banner .login-form p{
+    height: 32px;
+    margin: 5px auto;
+}
+#banner .email, #banner .password{
+    border: 0;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 7px;
+}
+#banner .password{
+    width: 236px;
+}
+#banner .help{
+}
+/*#banner .login-form p:nth-child(3){
+    background: #ffffff;
+}*/
+#banner .login-form .bg-fff{
+    border: 1px solid #DBE5DB;
+    background: #ffffff;
+}
+.btn{
+    width: 132px;
+    border: 0;
+    color: #fff;
+    padding: 7px 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+    filter: alpha(opacity:80);
+}
+.btn.login{
+    background: #2a8c70;
+}
+.btn.register{
+    border: 1px solid #2a8c70;
+    color: #2a8c70;
+    background: #edf4ed;
+    padding: 6px 0;
+}
+#banner .other-login{
+    float: right;
+}
+#banner .other-login li{
+    float: left;
+    width: 14px;
+    height: 12px;
+    margin-right: 5px;
+}
+#banner .other-login img{
+    width: 14px;
+    height: 12px;
+}
+#banner .remember-me{
+    float: left;
+    font-family: Tahoma;
+    vertical-align: middle;
+}
+/*banner 结束*/
+#anony-sns.section{
+    width: 1349px;
+    height: 604px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#anony-sns.section .wrap{
+    width: 950px;
+    height: 584px;
+}#shoucangjia{
+     position: relative;
+     margin: 0px 0px 10px;
+     display: block;
+     width: 950px;
+     height: 90px;
+     border:0;
+ }
+
+/*.section .side{*/
+    /*float: right;*/
+    /*width: 265px;*/
+    /*margin-left: 30px;*/
+/*}*/
+/*.side {*/
+    /*position: absolute;*/
+    /*top: 100px;*/
+    /*right: 0;*/
+/*}*/
+h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+#anony-sns .albums .pic {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+#anony-sns .albums li{
+    font-size: 12px;
+    display: inline-block;
+    width: 170px;
+    vertical-align: top;
+    margin: 10px 0 0 10px;
+}
+#anony-sns .albums .num{
+    color: #999;
+}
+
