@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style:none;
+        }
+        #container{
+            width: 680px;
+            height: 344px;
+            background: #ff0000;
+            margin:50px auto;
+            position: relative;
+        }
+        #tabs{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        #tabs li{
+            width: 20px;
+            height: 20px;
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            float: left;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        #tabs .selected{
+            background: orange;
+            color: #ffffff;
+        }
+        #imgs img{
+            display: none;
+        }
+        #imgs .selected{
+            display: block;
+        }
+        #arrows{
+            position: absolute;
+            left:10px;
+            bottom:10px;
+        }
+        #arrows span {
+            width: 20px;
+            height: 20px;
+            float: left;
+            text-align: center;
+            background: #000;
+            color: #ffffff;
+            margin-right: 5px;
+            cursor: pointer;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <ul id="tabs">
+        <li class="selected">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <div id="imgs">
+        <img class="selected" src="img/1.jpg" alt="">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/4.jpg" alt="">
+    </div>
+    <div id="arrows">
+        <span id="prev">&lt;</span>
+        <span id="next">&gt;</span>
+    </div>
+    <div id="move"></div>
+</div>
+<script> src="jquery-1.12.4.js"</script>
+<script>
+    $(function () {
+       var timer;
+       var nowIndex = 0;
+       var $lis = $("#nav li");
+        $lis.on("mouseover" , function () {
+            nowIndex = $(this).index();
+            changImg();
+        });
+        $("#prev").on("click", function () {
+            nowIndex--;
+            if(nowIndex == -1){
+                nowIndex = $lis.length -1;
+            }
+           changImg();
+        });
+       $("#next").on("click",function () {
+           nowIndex++;
+           if(nowIndex == $lis.length){
+               nowIndex = 0;
+           }
+           changImg();
+       });
+       play();
+       $("#container").hover(function () {
+           clearInterval(timer);
+       }, function () {
+           play();
+       });
+       function play() {
+           timer = setInterval(function () {
+               $("#next").trigger("click");
+           },2000);
+       };
+        function changImg() {
+            $lis.eq(nowIndex).addClass("selected").siblings().removeClass("selected");
+            $("#imgs img").eq(nowIndex).addClass("selected").siblings().removeClass("selected");
+        }
+    });
+</script>
+</body>
+</html>
