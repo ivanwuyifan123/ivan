@@ -54,6 +54,7 @@ define(["jquery"],function ($) {
                 nowIndex = 0;
             }
             changeImg.call(this);
+            console.log(this);
         }.bind(this));
         var timer;
         this.$container.hover(function () {

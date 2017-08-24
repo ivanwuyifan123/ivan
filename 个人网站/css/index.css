@@ -1,0 +1,112 @@
+body {
+    color: #818181;
+    line-height: 22px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    /*background-color: #000;*/
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    position: fixed;
+    z-index: 100;
+    color: #ffffff;
+    background: #000;
+    width: 200px;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+#logo{
+    text-align: center;
+    margin: 30px 0 0;
+}
+.jspContainer {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    width: 200px;
+}
+.jspPane {
+    position: absolute;
+    width: 200px;
+}
+.menu nav a {
+    display: block;
+    padding: 13px 0;
+    margin: 0 30px;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+    font-size: 17px;
+    font-weight: 300;
+    color: #818181;
+    text-decoration: none;
+}
+.menu nav a span:hover {
+    color: #7dba5c;
+    /*font-weight: 400;*/
+}
+.menu nav a span.active {
+    color: #7dba5c;
+    /*font-weight: 400;*/
+}
+.content-scroller {
+    position: absolute;
+    left: 200px;
+    right: 0;
+    overflow: hidden;
+    height: 100%;
+}
+.content-wrapper {
+    width: 7356px;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+.content {
+    width: 804px;
+    overflow-y: scroll;
+    height: 100%;
+    float: left;
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    transition: background 0.3s linear;
+}
+.noscroll {
+    overflow: hidden !important;
+}
+.white-bg {
+    background-color: #000000;
+}
+.introduction{
+    position: relative;
+}
+.inner{
+    padding: 70px;
+}
+.inner p{
+    position: relative;
+    padding: 0;
+}
+.introduction .inner{
+    margin: 47% 0 0 0;
+    position: absolute;
+    z-index: 2;
+}
+.introduction span.title{
+    border-bottom: 1px solid #7a7a7a;
+    border-top: 1px solid #7a7a7a;
+    color: #aeaeae;
+    /*padding: 15px 0;*/
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /*font-size: 13px;*/
+}
+h2 {
+    font-size: 45px;
+    line-height: 45px;
+}
