@@ -1,14 +1,46 @@
+@import url('normalize.css');
+/*
+----------------------------------
+
+        Name: style.css
+        Version: 1.0.0
+
+----------------------------------
+
+        Table of Contents
+
+        #Reset
+        #Typography
+        #Base Grid
+        #Left Side
+        #Content Area
+        #Introduction Screen
+        #About Screen
+        #Skills Screen
+        #Progressbar
+        #PieChart
+        #Experience Screen
+        #Education Screen
+        #Contact Screen
+        #Last Screen
+
+*/
+
+/* ==========================================================================
+   #Reset
+   ========================================================================== */
+
 body {
-     font-family: 'Roboto', sans-serif;
-     font-weight: 400;
-     font-size: 14px;
-     color: #818181;
-     line-height: 22px;
-     overflow-y: hidden;
-     overflow-x: hidden;
-     -webkit-font-smoothing: antialiased;
-     background-color: #000;
- }
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #818181;
+    line-height: 22px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-color: #000;
+}
 body.blog {
     overflow-y: scroll;
     overflow-x: auto;
@@ -53,10 +85,7 @@ figure, .slideshow li, .grid-gallery {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    transition-timing-function: none;
-    -moz-transition-timing-function: none;
-    -webkit-transition-timing-function: none;
-    -o-transition-timing-function: none;
+
     transition-duration: 0s;
     -moz-transition-duration: 0s;
     -webkit-transition-duration: 0s;
@@ -116,6 +145,17 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
     -moz-appearance: none;
     -webkit-user-select: text;
 }
+.validation {
+    border: 1px solid #dc0505 !important;
+}
+#successmsg {
+    margin-top: 10px;
+    color: #add93c;
+}
+/* ==========================================================================
+   #Typography
+   ========================================================================== */
+
 h1, h2, h3, h4, h5 {
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
@@ -474,7 +514,7 @@ h5 {
 }
 a.totop-link {
     bottom:5px;
-    background:url(../images/go-to-top-arrow.jpg) left top no-repeat;
+    background:url(../img/go-to-top-arrow.jpg) left top no-repeat;
     cursor: pointer;
     display: none;
     width:34px;
@@ -618,7 +658,7 @@ a.totop-link {
     width: 65%;
 }
 .skill-list ul li:before {
-    content: "\f00c";
+    content: "\e800";
     font-family: 'FontAwesome';
     font-size: 15px;
     margin: 0 5px 0 0
@@ -641,8 +681,19 @@ a.totop-link {
     float: right;
     position: relative;
     top: 10px;
+}.progress1 {
+    background: #565656;
+    width: 86%;
+    float: right;
+    position: relative;
+    top: 10px;
 }
 .progress div {
+    width:80%;
+    background-color: #8f8f8f;
+    height: 6px;
+}.progress1 div {
+    width:60%;
     background-color: #8f8f8f;
     height: 6px;
 }
@@ -1249,12 +1300,16 @@ iframe, embed, object {
 /* ==========================================================================
    #Media Ipad
    ========================================================================== */
-.fa-map-marker:before {
-    content: "\f041";
-}
+
 @media only screen and (max-device-width:768px)   {
     .introduction img {
         height:auto;
         width:auto;
     }
 }
+
+.buy-theme {position:fixed; bottom:0; border-radius: 0; left: 47px; background: url("../images/buy-theme.png") no-repeat 91% center #000; z-index: 10;  transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s;}
+.buy-theme:hover {left: 170px}
+.buy-theme span {padding:0 28px; position: relative; top:0; opacity: 0}
+.buy-theme:hover span {opacity: 1}
+.buy-theme a { color: #fff; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding:8px 15px; display: block }
