@@ -7,7 +7,7 @@ $(function () {
     var $lis = $("#tabs1 li");
     $lis.on("mouseover",function () {
         nowIndex = $(this).index();
-        //console.log(nowIndex);
+        // console.log(nowIndex);
         changeImg();
     });
     $("#prev").on("click", function () {
@@ -34,10 +34,10 @@ $(function () {
     function play() {
         timer = setInterval(function () {
             $("#next").trigger("click");
-        },1000);
+        },2000);
     }
     function changeImg() {
         $lis.eq(nowIndex).addClass("selected").siblings().removeClass("selected");
-        $("#tupain img").eq(nowIndex).addClass("selected").siblings().removeClass("selected");
+        $("#tupian img").eq(nowIndex).addClass("selected").siblings().removeClass("selected");
     }
 });

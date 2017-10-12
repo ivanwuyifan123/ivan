@@ -553,10 +553,10 @@
 .fa-bar-chart-o:before {
     content: "\f080";
 }
-.fa-twitter-square:before {
+.fa-weibo-square:before {
     content: "\f081";
 }
-.fa-facebook-square:before {
+.fa-qq-square:before {
     content: "\f082";
 }
 .fa-camera-retro:before {
@@ -623,10 +623,10 @@
 .fa-phone-square:before {
     content: "\f098";
 }
-.fa-twitter:before {
+.fa-weibo:before {
     content: "\f18a";//weibo
 }
-.fa-facebook:before {
+.fa-qq:before {
     content: "\f1d6";//qq
 }
 .fa-github:before {
@@ -1191,10 +1191,10 @@
 .fa-thumbs-down:before {
     content: "\f165";
 }
-.fa-youtube-square:before {
+.fa-weixin-square:before {
     content: "\f166";
 }
-.fa-youtube:before {
+.fa-weixin:before {
     content: "\f1d7";
 }
 .fa-xing:before {
@@ -1203,7 +1203,7 @@
 .fa-xing-square:before {
     content: "\f169";
 }
-.fa-youtube-play:before {
+.fa-weixin-play:before {
     content: "\f16a";
 }
 .fa-dropbox:before {

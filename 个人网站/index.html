@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ivan</title>
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
@@ -27,7 +27,8 @@
             <a href="#chapterexperience"><span id="link_experience">经验</span></a>
             <a href="#chaptereducation"><span id="link_education">学历</span></a>
             <a href="#chaptercontact"><span id="link_contact">联系我</span></a>
-            <a href="https://weibo.com/"><span id="link_blog">博客</span></a></nav>
+            <a href="https://weibo.com/"><span id="link_blog">博客</span></a>
+        </nav>
 
     </aside>
     <a href="#menu" class="totop-link">Go to the top</a>
@@ -35,21 +36,21 @@
     <div class="content-scroller">
         <div class="content-wrapper">
             <article class="content introduction noscroll" id="chapterintroduction">
-                <div class="inner">
-                    <h2 style="color: #1a1a1a"><span style="color: #1a1a1a">HEllo, I'm</span><br>
+                <div class="inner" style="position: relative; bottom: 30px; left: 40px;">
+                    <h2 style="color: #000000"><span style="color: #000000">HEllO, I'm</span><br>
                 ivan wu
                     </h2>
-                    <span class="title" style="color: #1a1a1a">Web Developer</span>
+                    <span class="title" style="color: #000000">Web Developer</span>
                 </div>
-                <div id="owl-demo1" >
+                <div id="owl-demo1" class="owl-carousel">
                     <ul id="tabs1">
                         <li class="selected">1</li>
                         <li>2</li>
                         <li>3</li>
                     </ul>
                     <div id="tupian">
-                        <img class="selected" src="img/pic1.png" alt="">
-                        <img src="img/pic2.JPG" alt="">
+                        <img class="selected" src="img/pic2.JPG" alt="" >
+                        <img src="img/pic1.JPG" alt="" >
                         <img src="img/pic3.JPG" alt="">
                     </div>
                     <div id="arrows1">
@@ -347,11 +348,21 @@
                                         <h3>我也有社交软件</h3>
                                          我的主流社交网络联系如下
                                         <div class="contact-social margin-top30">
-                                            <a href="https://www.qq.com" target="_blank"><i class="fa fa-facebook"></i></a>
-                                            <a href="https://weibo.cn" target="_blank"><i class="fa fa-twitter"></i></a>
-                                            <a href="https://weixin.qq.com" target="_blank"><i class="fa fa-youtube"></i></a>
+                                            <!--<a href="https://www.qq.com" target="_blank"><i class="fa fa-qq"></i></a>-->
+                                            <!--<a href="https://weibo.cn" target="_blank"><i class="fa fa-weibo"></i></a>-->
+                                            <!--<a href="https://weixin.qq.com" target="_blank"><i class="fa fa-weixin"></i></a>-->
+                                            <a ><i class="fa fa-qq"></i></a>
+                                            <a ><i class="fa fa-weibo"></i></a>
+                                            <a ><i class="fa fa-weixin"></i></a>
                                             <!--<a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a>-->
                                             <!--<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>-->
+                                        </div>
+                                        <div class="code_wrap">
+                                            <ul class="code">
+                                                <li><img class="qr-weibo" src="img/qrweibo.JPG" alt=""></li>
+                                                <li><img class="qr-qq" src="img/qrqq.JPG" alt=""></li>
+                                                <li><img class="qr-weixin" src="img/qrweixin.JPG" alt=""></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -364,7 +375,7 @@
                                     <h3>给我留言</h3>
                                     <form id="form1" name="form1" method="post" >
                                         <input name="name" type="text" id="name" placeholder="你的姓名" />
-                                        <input name="email" type="text" id="email" placeholder="你的邮箱" style="margin-bottom: 20px;">
+                                        <input name="email" type="text" id="email" placeholder="你的邮箱" style="margin-bottom: 10px;">
                                         <textarea name="message" id="message" cols="45" rows="5" placeholder="你的留言"></textarea>
                                         <input type="submit" name="button" id="button" value="打个招呼吧！" >
                                         <div id="successmsg" ></div>
@@ -382,5 +393,7 @@
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/movetotop.js"></script>
 <script src="js/carousal.js"></script>
+<script src="js/qrcode.js"></script>
+<script src="js/jquery-1.12.4.min.js.js"></script>
 </body>
 </html>
