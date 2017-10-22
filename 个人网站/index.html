@@ -6,10 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/carousal.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 <body>
 <div id="container">
@@ -21,28 +19,28 @@
         </div>
         <a href="#menu1" class="menu-link"></a>
         <nav id="menu1" role="navigation">
-            <a href="#chapterintroduction"><span id="link_introduction" class="active">首页</span></a>
-            <a href="#chapterabout"><span id="link_about">关于我</span></a>
-            <a href="#chapterskills"><span id="link_skills">技能</span></a>
-            <a href="#chapterexperience"><span id="link_experience">经验</span></a>
-            <a href="#chaptereducation"><span id="link_education">学历</span></a>
-            <a href="#chaptercontact"><span id="link_contact">联系我</span></a>
+            <a class="toIntroduction" ><span id="link_introduction" class="active">首页</span></a>
+            <a class="toAbout" ><span id="link_about">关于我</span></a>
+            <a class="toSkills" ><span id="link_skills">技能</span></a>
+            <a class="toExperience" ><span id="link_experience">经验</span></a>
+            <a class="toEducation"><span id="link_education">学历</span></a>
+            <a class="toContact" ><span id="link_contact">联系我</span></a>
             <a href="https://weibo.com/"><span id="link_blog">博客</span></a>
         </nav>
 
     </aside>
-    <a href="#menu" class="totop-link">Go to the top</a>
+    <a  class="totop-link">Go to the top</a>
 
     <div class="content-scroller">
         <div class="content-wrapper">
-            <article class="content introduction noscroll" id="chapterintroduction">
+            <div class="content introduction noscroll" id="chapterintroduction">
                 <div class="inner" style="position: relative; bottom: 30px; left: 40px;">
                     <h2 style="color: #000000"><span style="color: #000000">HEllO, I'm</span><br>
                 ivan wu
                     </h2>
                     <span class="title" style="color: #000000">Web Developer</span>
                 </div>
-                <div id="owl-demo1" class="owl-carousel">
+                <div id="owl-demo" class="owl-carousel">
                     <ul id="tabs1">
                         <li class="selected">1</li>
                         <li>2</li>
@@ -54,20 +52,20 @@
                         <img src="img/pic3.JPG" alt="">
                     </div>
                     <div id="arrows1">
-                        <span id="prev">&lt;</span>
-                        <span id="next">&gt</span>
+                        <!--<span id="prev">&lt;</span>-->
+                        <span id="next"></span>
                     </div>
                     </div>
 
-            </article>
-            <article class="content about white-bg jspScrollable" id="chapterabout" >
+            </div>
+            <div class="content about white-bg jspScrollable" id="chapterabout" >
                 <div class="inner">
                     <h2>关于我</h2>
                     <div class="title-divider"></div>
                     <div class="about-con">
                         <ul>
                             <li>ivan wu</li>
-                            <li>Email: <a href="buxianggaosuni@163.com">buxianggaosuni@163.com</a></li>
+                            <li>Email: <a href="https://buxianggaosuni@163.com">buxianggaosuni@163.com</a></li>
                             <li>手机: 188-8888-8888</li>
                             <li>生日: 1996</li>
                             <li>地址: 广东省广州市</li>
@@ -78,8 +76,8 @@
                         </p>
                         <a href="#" class="button">下载简历</a> </div>
                 </div>
-            </article>
-            <article class="content skills gray-bg jspScrollable" id="chapterskills" >
+            </div>
+            <div class="content skills gray-bg jspScrollable" id="chapterskills" >
                 <div class="inner">
                     <h2>技能</h2>
                     <div class="title-divider"></div>
@@ -138,7 +136,7 @@
                         <div class="container-sub skill-list">
                             <div class="row">
                                 <h3>学识</h3>
-                                <p>balabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabala</p>
+                                <p>balabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabala</p>
                                 <div class="col-4 margin-top10">
                                     <ul>
                                         <li>数据库</li>
@@ -169,7 +167,7 @@
                         <div class="container-sub">
                             <div class="row">
                                 <h3>语言能力</h3>
-                                <p>balabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabala</p>
+                                <p>balabalabalabalabalabalabalabalabalabalabalabalabalabalabala</p>
                                 <div class="progressbar-main margin-top50">
                                     <div class="progress-bar-description">英语能力</div>
                                     <div id="progressBar" class="progress1">
@@ -198,8 +196,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="content experience white-bg jspScrollable" id="chapterexperience">
+            </div>
+            <div class="content experience white-bg jspScrollable" id="chapterexperience">
                 <div class="inner">
                     <h2>项目经验</h2>
                     <div class="title-divider"></div>
@@ -214,7 +212,7 @@
                                         <div class="col-3 icon-block"><i class="fa fa-send-o"></i></div>
                                         <div class="flot-left" style="margin-left: 20px;">
                                             <h5>整网开发</h5>
-                                            <h4>豆瓣网</h4>
+                                            <h4>星巴克</h4>
                                             <span>2017</span> </div>
                                     </div>
                                     <div class="col-6 margin-bottom50 margin-top50 no-margin-top"> balabalabalabalabalabalabalabalabal<br>balabalabalabalabalabalabalabalabal<br>balabalabalabalabalabalabalabalabal<br>balabalabalabalabalabalabalabalabal<br></div>
@@ -224,9 +222,9 @@
                                     <div class="col-6 margin-bottom50 margin-top50">
                                         <div class="col-3 icon-block"><i class="fa fa-briefcase"></i></div>
                                         <div class="flot-left" style="margin-left: 20px;">
-                                            <h5>待定</h5>
-                                            <h4>待定</h4>
-                                            <span>待定</span> </div>
+                                            <h5>整站开发</h5>
+                                            <h4>美团</h4>
+                                            <span>2017</span> </div>
                                     </div>
                                     <div class="col-6 margin-bottom50 margin-top50 no-margin-top">balabalabalabalabalabalabalabalabal<br>balabalabalabalabalabalabalabalabal<br>balabalabalabalabalabalabalabalabal<br>balabalabalabalabalabalabalabalabal<br></div>
                                 </div>
@@ -267,8 +265,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="content education gray-bg jspScrollable" id="chaptereducation">
+            </div>
+            <div class="content education gray-bg jspScrollable" id="chaptereducation">
                 <div class="inner">
                     <h2>学习历程</h2>
                     <div class="title-divider"></div>
@@ -314,8 +312,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="content contact white-bg jspScrollable" id="chaptercontact">
+            </div>
+            <div class="content contact white-bg jspScrollable" id="chaptercontact">
                 <div class="inner">
                     <h2>联系方式</h2>
                     <div class="title-divider"></div>
@@ -346,7 +344,7 @@
                                     </div>
                                     <div class="col-6 m-margin-top30">
                                         <h3>我也有社交软件</h3>
-                                         我的主流社交网络联系如下
+                                         我的主流社交网络联系如下(图标含二维码)
                                         <div class="contact-social margin-top30">
                                             <!--<a href="https://www.qq.com" target="_blank"><i class="fa fa-qq"></i></a>-->
                                             <!--<a href="https://weibo.cn" target="_blank"><i class="fa fa-weibo"></i></a>-->
@@ -385,8 +383,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="content introduction-end" id="chapterthankyou"></article>
+            </div>
+            <div class="content introduction-end" id="chapterthankyou"></div>
         </div>
     </div>
 </div>
@@ -394,6 +392,8 @@
 <script src="js/movetotop.js"></script>
 <script src="js/carousal.js"></script>
 <script src="js/qrcode.js"></script>
-<script src="js/jquery-1.12.4.min.js.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/responsive.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!-- @auther:evenfun@126.com -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+    ////////////////////////////////////////////////
+    o = {};
+    o.speed = 1000;
+    o.long = function() {
+        $(".back").animate({ width:$(window).width() }, o.speed, o.short );
+    }
+    o.short = function() {
+        $(".back").animate({ width:"100px" }, o.speed, o.long );
+    }
+
+
+    o.left = function() {
+        $(".back1").animate({ left:"0px" }, o.speed, o.right );
+    }
+    o.right = function() {
+        $(".back1").animate({left:$(window).width()-100 }, o.speed, o.left);
+    }
+    /////////////////////////////////////
+    $(document).ready(function() {
+        o.long();
+        o.right();
+        $("#input\\.name").val("evenfun@126.com");
+        //$("div").html("evenfun@126.com").html();
+        var leftFlag = 0;
+        $("#right").click(function(){if($(window).width()-leftFlag>=300) {
+            leftFlag+=300;$(".block").animate({left: '+=300'}, "slow");}});
+
+        $("#left").click(function(){if(leftFlag>=300) {leftFlag-=300;
+            $(".block").animate({left: '-=300'}, "slow");}});
+    });
+</script>
+<style>
+    body{margin:0 0 0 0;}
+    .back{ width:100px; background:red; }
+    .back1{ position:absolute; background:red; }
+    .block{ position:absolute; background:red; }
+</style>
+<input id="input.name" type="text" value="test" />
+<div class='back'>宽度自动变化</div><br />
+<button id="left">««左移««</button>
+<button id="right">»»右移»»</button>><br />
+<div class="block">手动左右移</div>
+<div id="abc" style="border:dotted 2px black;"> </div>
+<div class='back1'>自动左右移</div>

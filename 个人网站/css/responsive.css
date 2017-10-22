@@ -1,9 +1,6 @@
 /* Media Queries */
-@media screen and (max-width: 1700px) {
-    .blog-list iframe, embed, object{
-        height: 94% !important;
-        min-height: auto;
-    }
+@media(max-width: 1700px) {
+
     .recent-comments .col-3{
         width: 100%;
         margin-top: 20px;
@@ -12,7 +9,7 @@
         width: 94%;
     }
 }
-@media screen and (max-width: 1200px) {
+@media(max-width: 1200px) {
     .blog-main {
         margin: 0 30px 0 240px;
     }
@@ -28,13 +25,11 @@
     .blog-list .contact-social a:first-child i {
         margin: 0 6px 0 0;
     }
-    .blog-left .row .blog-list { width: 47%;
-    }
     .no-page{
         margin:0 0 0 240px;
     }
 }
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .jspVerticalBar {
         opacity: 1;
     }
@@ -53,28 +48,9 @@
     .content {
         width: 700px;
     }
-    .slideshow figure {
-        width: 80%;
-        height: 80%;
-        margin: 0 10%;
-    }
-    .slideshow nav span.nav-prev, .slideshow nav span.nav-next {
-        top: 60%;
-    }
-    span.nav-prev {
-        display: none;
-    }
-    span.nav-next {
-        display: none;
-    }
-    .slideshow li {
-        display: none;
-    }
-    .slideshow li.current {
-        display: block;
-    }
-    .owl-pagination {
-        bottom: 20% !important;
+
+    #tabs1{
+        bottom: 5% !important;
     }
     .introduction-end-con {
         width: 46%;
@@ -103,7 +79,7 @@
         margin-top: 3%;
     }
 }
-@media screen and (max-width: 960px) {
+@media(max-width: 960px) {
     .blog-left .row .blog-list {
         margin: 0 4.6% 35px 0;
         width: 45%;
@@ -119,7 +95,7 @@
         margin: 2% 0 0 353px;
     }
 }
-@media screen and (max-width: 900px) {
+@media(max-width: 900px) {
     .blog-right {
         width: 32%;
     }
@@ -132,7 +108,7 @@
         margin: 2% 0 0 386px;
     }
 }
-@media screen and (max-width: 800px) {
+@media(max-width: 800px) {
     .blog-left .row .blog-list {
         min-height: 630px;
     }
@@ -158,7 +134,8 @@
         float: right;
     }
 }
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
+
     body {
         overflow-x: auto;
         overflow-y: auto;
@@ -233,6 +210,7 @@
         height: 25px;
         font-size: 23px;
         color: #FFF;
+        z-index:100;
     }
     .menu-link:hover {
         color: #999;
@@ -255,7 +233,9 @@
         overflow: visible !important;
         width: 100% !important;
         background-color: #000;
-        height: 400px;
+        height: 330px;
+        opacity: 0.9;
+        filter:alpha(opacity = 90);
     }
     nav.active .jspContainer {
         background-color: #000;
@@ -287,25 +267,10 @@
     .experience-details .col-3, .education-con .col-3 {
         width: 30%
     }
-    .slideshow figure {
-        width: auto;
-        height:auto;
-    }
-    .slideshow figcaption h3 {
-        line-height: 30px
-    }
-    .slideshow .nav-prev, .slideshow .nav-next {
-        display: none
-    }
-    .slideshow li:after {
-        position:relative;
-    }
-    .owl-pagination {
+    #tabs1{
         bottom: 0 !important;
     }
-    .grid-gallery {
-        height:auto;
-    }
+
     .introduction .owl-theme .owl-controls {
         margin-top: 0;
         text-align: center;
@@ -316,10 +281,7 @@
     a.totop-link {
         display: block;
     }
-    .blog-main {
-        margin: 50px 40px;
-        padding: 32px 0;
-    }
+
     .pagerblock {
         margin: 0;
     }
@@ -355,22 +317,17 @@
     .no-page{
         margin: 40px 0 0 0 ;
     }
-    .blog-left .row .blog-list {
-        min-height: 630px;
-    }
-    .slideshow li {
-        margin-left: -350px;
-    }
+
     .xs-display-none {display: none}
 
 }
-@media screen and (max-width: 767px) {
+@media(max-width: 767px) {
     .content-wrapper {
         height: auto;
         margin-left: 0;
         width: 100%;
     }
-    .introduction .owl-pagination {
+    .introduction #tabs1 {
         bottom: 15px;
     }
     .introduction .owl-theme .owl-controls {
@@ -391,12 +348,17 @@
 
 }
 
-@media screen and (max-width: 675px) {
+@media(max-width: 675px) {
     .inner {
         padding: 130px 30px 40px 30px;
     }
+    span.title{
+        width: 120px;
+    }
     .introduction .inner {
-        background: url(../images/black-transparent.png) repeat
+        margin: 180px 0 0 0;
+        padding-top: 130px !important;
+        width: 86%;
     }
     .introduction h2 {
         font-size: 35px;
@@ -432,15 +394,7 @@
         width: 25px !important;
         margin: 0
     }
-    .grid li {
-        margin: 0 0 40px 0
-    }
-    .grid-gallery .figcaption-details h3 {
-        font-size: 15px;
-        padding: 15px 0 0
-    }
-    .grid-gallery .figcaption-details span {
-    }
+
     .skills-con .col-6 {
         text-align: center
     }
@@ -494,31 +448,25 @@
     .progress {
         width: 100%
     }
+    .progress1 {
+        width: 100%
+    }
     .progress-bar-description {
         margin: 0
     }
 }
-@media screen and (max-width: 620px) {
+@media (max-width: 620px) {
     h2 {
         font-size: 30px;
         line-height: 30px;
     }
+    .introduction .inner {
+        margin: 140px 0 0 0;
+    }
     .title-divider {
         margin: 20px 0 30px 0;
     }
-    .slideshow figure {
-        border: 20px solid #3f3f3f;
-        border-top: 10px solid #3f3f3f;
-    }
-    .slideshow figure {
-        width: 50%;
-    }
-    .slideshow li {
-        left: 50%;
-        top: 0;
-        margin: 20px 0 0 -265px;
-    }
-    .owl-pagination {
+    #tabs1 {
         bottom: 0 !important;
     }
     .contact-form input[type="text"], textarea {
@@ -546,17 +494,8 @@
         line-height: 20px;
         width: 20px;
     }
-    .pagerblock li a i {
-        line-height: 22px;
-    }
-    .pagerblock li {
-        float: left;
-        margin: 0 6px;
-    }
-    .pagerblock {
-        margin: 0 0 0 0;
-    }
-    .pagination {
+
+    #tabs1{
         padding: 15px 0 10px;
     }
     .sidebar-block {
@@ -573,26 +512,12 @@
         margin: 2% 0 0 35px;
     }
 }
-@media screen and (max-width: 420px) {
-    .slideshow figure {
-        width: 36%;
+@media(max-width: 510px){
+    .introduction .inner {
+        margin: 30px 0 0 0;
     }
-    .slideshow li {
-        margin: 20px 0 0 -216px;
-    }
-    .slideshow nav span {
-        font-size: 1.6em;
-    }
-    .slideshow nav span.nav-close {
-        padding: 0.4em 0.5em;
-    }
-    .slideshow figcaption h3 {
-        font-size: 130%;
-        padding: 0 0 0px;
-    }
-    .grid-gallery {
-        height: auto
-    }
+}
+@media(max-width: 420px) {
     .comments-name .pull-left{
         float: left;
         text-align: center;
@@ -615,17 +540,17 @@
         width: 94%;
         margin-bottom: 20px;
     }
-    .blog-details-title .breadcrumbs{
-        display: none;
-    }
+    /*.blog-details-title .breadcrumbs{*/
+        /*display: none;*/
+    /*}*/
     .no-page-text {
         margin: 10%;
     }
 }
-@media screen and (max-width: 360px) {
+@media  (max-width: 360px) {
     .introduction .inner {
         margin: 0 0 0 0;
-        padding-top: 130px !important;
+        padding-top: 130px;
         width: 86%;
     }
 }

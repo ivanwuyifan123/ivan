@@ -26,7 +26,7 @@ $(function () {
     });
     play();
 
-    $("#owl-demo1").hover(function () {
+    $("#owl-demo").hover(function () {
         clearInterval(timer);
     }, function () {
         play();
