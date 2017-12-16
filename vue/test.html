@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <style>
+        .red{
+            background-color: #ff0000;
+        }
+        .font{
+            font-size:40px;
+        }
+        .dis{
+            display: none;
+        }
+        .hh{
+            height: 200px;
+            width: 200px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model = "msg">
+    <span v-text = "msg"></span>
+    <span v-html = "msg"></span>
+    <!--{{msg}}-->
+    <button @click="fn">click</button>
+    <p :id="p" :text="pp">pppp</p>
+    <p :class="[classA,classB]">ppppppp</p>
+    <button @click="fn1">click</button>
+    <div :class="{hh:isHh}"></div>
+</div>
+</body>
+<script src="vue.js"></script>
+<script>
+//    function V(obj) {
+//        for(var p in obj){
+//            if(p == 'el'){
+//                this['$'+ p] = document.querySelector(obj[p]);
+//            }else if(p == 'date'){
+//                this['$'+ p] = obj[p];
+//                for(var q in obj[p]){
+//                    this[q] = obj[p][q];
+//                }
+//            }
+//        }
+//    }
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            p:'p11111',
+            pp:'ssssss',
+            msg:'<h1>123456<h1>',
+            classA:'red',
+            classB:'font',
+            isHh:'true'
+        },
+        methods: {
+            fn: function () {
+                console.log(1111);
+            },
+            fn1:function () {
+               vm.isHh = !vm.isHh;
+            }
+        }
+    })
+</script>
+</html>

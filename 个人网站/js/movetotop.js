@@ -47,13 +47,13 @@ $(".toExperience").on("click",function () {
         }, (500))
     }
 });
-$(".toEducation").on("click",function () {
-    if($('#chaptereducation').offset().left != 200) {
-        $("div").stop().animate({
-            scrollLeft: $("#chaptereducation").offset().left - 200
-        }, (500))
-    }
-});
+// $(".toEducation").on("click",function () {
+//     if($('#chaptereducation').offset().left != 200) {
+//         $("div").stop().animate({
+//             scrollLeft: $("#chaptereducation").offset().left - 200
+//         }, (500))
+//     }
+// });
 $(".toContact").on("click",function () {
     if($('#chapterskills').offset().left != 200) {
         $("div").stop().animate({
@@ -65,4 +65,10 @@ $(".totop-link").on("click",function () {
     $("html,body").animate({
         scrollTop:$(".introduction").offset().top
     },(800))
+});
+$(".toEducation").click(function(){
+    var $lefty = $(this).next();
+        $lefty.animate({
+        left:parseInt($lefty.css('.toEducation'),10)==0 ? -$lefty.outerWidth() : 0
+    });
 });
